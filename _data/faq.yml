@@ -7,17 +7,11 @@
         en:
             title: The app reports that location services are not working!
             content: |
-                Unfortunately WhereYouGo is not yet fully compatibale to Android 12, which is causing this problem.
-                There is no workaround for the time being, so WhereYouGo does not work on Android 12 devices.
-                
-                Unfortunately the open source team maintaining the app is quite small at this moment, but we are doing our best to make WhereYouGo compatible to Android 12 and release an update as soon as possible.         
+                Please update your installation to the newest WhereYouGo version 2022.01.14, where this problem is solved.
         de:
             title: Die App meldet, dass die Standortdienste nicht funktionieren!
             content: |
-                Leider ist WhereYouGo noch nicht voll kompatibel zu Android 12, was dieses Problem verursacht.
-                WhereYouGo funktioniert also nicht auf Android 12-Geräten, es gibt momentan keinen Workaround.
-                
-                Leider ist das Open-Source Team, welches die App weiterentwicklet momemtan sehr klein, aber wir geben unser Bestes um WhereYouGo so schnell wie möglich zu Android 12 kompatibel zu machen und ein Update zu veröffentlichen.
+                Bitte aktualisiere deine Installation auf die neueste Version von WhereYouGo 2022.01.14, in der das Problem behoben ist.
       - id: file_access
         en:
             title: The app does not see any cartridge and/or offline map files!
@@ -27,6 +21,13 @@
                 To still be able to load and play cartridges please proceed as follows:
                 - Go to WhereYouGo Settings - Global and set the Wherigo folder to "Default"
                 - Load cartridges via in-app download by e.g. clicking on a Wherigo download link on the website or triggering the download from c:geo.
+                - Additionally check the app settings as described in this [FAQ entry](https://www.whereyougo.org/faq#android12_links)
+                
+                Some cartridges are provided via websites other than www.whereigo.com. To use those with WhereYouGo you can try the following steps:
+                - Download cartridge to your PC
+                - Connect your mobile with your PC
+                - Copy the cartridge to the following folder on your mobile: /Android/data/menion.android.whereyougo/files
+                (This workaround may not be supported by all devices.)
                 
                 Regarding the use of offline maps:
                 There is no workaround possible for the time being. You can only use the available online maps until the problem is solved.
@@ -40,11 +41,18 @@
                 Um dennoch Cartridges zu laden und zu spielen, geh bitte wie folgt vor:
                 - Gehe in die WhereYouGo Einstellungen - Allgemein und setze den Wherigo-Ordner auf "Standard"
                 - Lade Cartridges mittels In-App Download z.B. durch Klick auf einen Wherigo Download-Link auf der Webseite oder durch Starten des Downloads aus c:geo.
+                - Überprüfe zusätzlich die App-Einstellungen wie in diesem [FAQ-Eintrag](https://www.whereyougo.org/faq#android12_links) beschrieben.
+                
+                Manche Cartridges werden von anderen Websites als www.whereigo.com bereitgestellt. Um diese mit WhereYouGo spielen zu können, kannst Du folgende Schritte ausprobieren:
+                - Lade die Cartridge am PC herunter
+                - Verbinde Dein Handy mit dem PC
+                - Kopiere die Cartridge in folgendes Verzeichnis auf Deinem Handy: /Android/data/menion.android.whereyougo/files
+                (Dieser Weg wird möglicherweise nicht auf allen Geräten unterstützt.)
                 
                 Bezüglich der Nutzung von Offline-Karten:
                 Hier gibt es leider momentan keinen Workaround. Du kannst nur die verfügbaren Online-Karten nutzen, bis das Problem behoben ist.
                 
-                Leider ist das Open-Source Team, welches die App weiterentwicklet momemtan sehr klein, aber wir geben unser Bestes um WhereYouGo so schnell wie möglich zu neueren Android-Versionen kompatibel zu machen und ein Update zu veröffentlichen.
+                Leider ist das Open-Source Team, welches die App weiterentwickelt, momentan sehr klein, aber wir geben unser Bestes, um WhereYouGo so schnell wie möglich zu neueren Android-Versionen kompatibel zu machen und ein Update zu veröffentlichen.
       - id: android12_links
         en:
             title: I am using Android 12 and Wherigo links are no longer opened with WhereYouGo!
@@ -53,7 +61,9 @@
                 
                 This is caused by the fact, that in Android 12 Google removed the dialog to let the user choose which app to use for certain web links. Instead the browser is automatically used.
                 
-                You can change this by going to your device app settings, open the WhereYouGo app settings and manually select to allow all URLs (web links) to open in WhereYouGo.                
+                You can change this by going to your device app settings, open the WhereYouGo app settings, go to "set as default", enable "open supported links", and manually select to allow all URLs (web links) to open in WhereYouGo. 
+                
+                For Xiaomi and Poco devices see this [FAQ entry for c:geo](https://www.cgeo.org/faq#android12)
         de:
             title: Ich nutze Android 12 und Wherigo-Links werden nicht mehr mit WhereYouGo geöffnet!
             content: |
@@ -61,7 +71,9 @@
                 
                 Dies wird dadurch verursacht, dass Google den Dialog, der den Nutzer die gewünschte App auswählen lässt, entfernt hat. Stattdessen wird der Link im Browser geöffnet.
                 
-                Du kannst dies ändern, in dem du die App-Einstellungen deines Gerätes und dort die WhereYouGo App-Einstellungen öffnest und dort manuell festlegst alle URLs (Web-Links) mit WhereYouGo zu öffnen.
+                Du kannst dies ändern, indem du die App-Einstellungen deines Gerätes und dort die WhereYouGo App-Einstellungen öffnest. Dort gehe zu "Festlegen als Standard", aktiviere "Unterstützte Links öffnen" sowie unter "Unterstützte Webadressen" alle URLs (Web-Links).
+
+                Für Xiaomi- und Poco-Geräte siehe auch diesen [FAQ-Eintrag für c:geo](https://www.cgeo.org/faq#android12)
       - id: locus
         en:
             title: I want to use Locus as map provider, but it does not work!
@@ -157,6 +169,7 @@
                 - Accept the license terms and conditions shown before the download starts
                 
                 After you went through these steps, the download should now also work in WhereYouGo.
+                
         de:
             title: Das Herunterladen von Cartridges von wherigo.com schlägt fehl!
             content: |
@@ -170,6 +183,7 @@
                 - Öffne eine beliebige Cartridge-Seite
                 - Wählen den Cartridge-Typ "Pocket PC" aus und klicke auf den Link, um die Cartridge herunterzuladen
                 - Akzeptiere nun die Lizenzbedingungen, die vor dem Beginn des Downloads abgefragt werden
+                
       - id: mapsforge
         en:
             title: What offline map file can I use for WhereYouGo?
