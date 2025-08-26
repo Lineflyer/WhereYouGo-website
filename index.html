@@ -7,23 +7,6 @@ edit_link:
 <header>
     <div class="center">
         <img src="images/whereyougo.png" class="logo">
-        {% capture mdtmp %}{% include description.md %}{% endcapture %}
-        <div class="description">{{ mdtmp | markdownify }}</div>
-        <div id="download-button" tabindex="0">
-            <span class="mdi mdi-android"></span>
-            <div class="text">
-                <strong>Free Download</strong>
-                <small> for Android</small>
-            </div>
-            <div class="options">
-                {% for download in site.data.downloads %}
-                <a href="{{ download.url }}" style="color: {{ download.color }}" title="{{ download.title }}" onfocus="this.parentElement.parentElement.focus()">
-                    <span class="mdi mdi-{{ download.icon }}"></span>
-                    <small>{{ download.name }}</small>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
     </div>
 </header>
 
@@ -34,15 +17,4 @@ edit_link:
             {{ mdtmp | markdownify }}
         </div>
     {% endunless %}
-    <div class="container">
-        <div class="features">
-            {% for feature in site.data.features %}
-            <div class="feature-container">
-                <div class="feature-icon mdi mdi-{{ feature.icon }}"></div>
-                <div class="feature-title">{{ feature.title }}</div>
-                <div class="feature-description">{{ feature.description }}</div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
 </main>
