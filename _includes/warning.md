@@ -1,3 +1,4 @@
-Developers needed to keep WhereYouGo alive!
+Important notice:
+Further development of the WhereYouGo app was discontinued by the c:geo team in favor of integrating WherIGo functionality into [c:geo](https://www.cgeo.org) itself.
 
-[Call for developers - Click for more info](development)
+Therefore please consider using the WherIGo player integrated into [c:geo](https://www.cgeo.org) instead.
