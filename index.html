@@ -1,20 +1,16 @@
 ---
 layout: default
 edit_link:
-  warning: _includes/warning.md
+  description: _includes/description.md
 ---
 
 <header>
     <div class="center">
         <img src="images/whereyougo.png" class="logo">
+        {% capture mdtmp %}{% include description.md %}{% endcapture %}
+        <div class="description">{{ mdtmp | markdownify }}</div>
     </div>
 </header>
 
 <main>
-    {% capture mdtmp %}{% include warning.md %}{% endcapture %}
-    {% unless mdtmp contains "WARNING_DISABLED" %}
-        <div class="warning">
-            {{ mdtmp | markdownify }}
-        </div>
-    {% endunless %}
 </main>
